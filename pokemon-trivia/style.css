@@ -2,17 +2,72 @@ body {
   margin: 0;
 }
 
-#header {
-  width: 100%;
-  height: 100px;
+header {
+  width: 100vw;
+  height: 10vh;
   background-color: #ef5350;
   display: flex;
   justify-content: center;
 }
 
-#pokemon-logo {
-  margin: 5px 0;
+.header {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
 
+.header img {
+  margin: 5px 0;
+  size: ;
+}
 
+#general {
+  background-color: rgb(233, 233, 233);
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
 
+#main-content {
+  width: 80vw;
+  height: ;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: space-between;
+}
+
+#right-content, #leftcontent {
+  width: 39.5vw;
+  background-color: rgba(224, 224, 224, 0.664);
+}
+
+footer {
+  background-color: #ef5350;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer-text {
+  color: white;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: rgb(5, 2, 22);
+}
+
+.fab {
+  margin: 0 5px;
+  font-size: 30px
+}

@@ -2,6 +2,9 @@ body {
   margin: 0;
 }
 
+/* -------------------------------------------------------- */
+/* Header */
+
 header {
   width: 100vw;
   height: 10vh;
@@ -18,7 +21,11 @@ header {
 
 .header img {
   margin: 5px;
+  max-height: 10vh;
 }
+
+/* -------------------------------------------------------- */
+/* Parte principal */
 
 #general {
   background-color: rgb(233, 233, 233);
@@ -39,12 +46,47 @@ header {
 #right-content, #leftcontent {
   width: 39.5vw;
   background-color: rgba(224, 224, 224, 0.664);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.question {
+  justify-self: flex-start;
+  font-size: 40px
+}
+
+.pokemon img {
+  size: 2x
+}
+
+.option {
+  margin: 10px 0;
+  height: 80px;
+  width: 350px;
+  border: 6px solid #3d7dca;
+  border-radius: 10px;
+  background-color:	#ffcb05;
+  color:	#003a70;
+  font-size: 32px;
+}
+
+.wrong {
+  border: 6px solid #3d7cca59;
+  border-radius: 10px;
+  background-color:	#ffcd0555;
+  color:	#003a7060;
+  font-size: 32px;
+}
+
+/* -------------------------------------------------------- */
+/* Footer */
 
 footer {
   background-color: #ef5350;
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,3 +113,6 @@ a {
   margin: 0 5px;
   font-size: 30px
 }
+
+/* -------------------------------------------------------- */
+/* Informações dinâmicas */

@@ -18,7 +18,6 @@ header {
 
 .header img {
   margin: 5px 0;
-  size: ;
 }
 
 #general {
@@ -31,7 +30,7 @@ header {
 
 #main-content {
   width: 80vw;
-  height: ;
+  height: 80vh;
   background-color: rgb(233, 233, 233);
   display: flex;
   justify-content: space-between;
@@ -62,6 +61,7 @@ footer {
   color: white;
   font-size: 18px;
 }
+
 a {
   text-decoration: none;
   color: rgb(5, 2, 22);

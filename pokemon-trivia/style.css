@@ -89,6 +89,16 @@ header {
   font-size: 32px;
   font-family: 'Pokemon', cursive;
   text-align: center;
+  box-shadow: -5px 5px 10px 0 #003a708c;
+  transition: 0.3s;
+}
+
+.option:hover {
+  box-shadow: -8px 8px 10px 0 #003a708c;
+}
+
+.option:active, .option:focus {
+  outline: none;
 }
 
 .option p {
@@ -102,6 +112,7 @@ header {
   background-color:	#ffcd0555;
   color:	#003a7060;
   font-size: 32px;
+  box-shadow: none;
 }
 
 /* -------------------------------------------------------- */

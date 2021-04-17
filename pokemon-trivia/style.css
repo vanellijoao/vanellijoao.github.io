@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'PokemonSolid';
+  src: url(./fonts/Pokemon\ Solid.ttf);
+}
+
 body {
   margin: 0;
 }
@@ -58,7 +63,7 @@ header {
 
 .question {
   justify-self: flex-start;
-  font-family: 'Pokemon', cursive;
+  font-family: 'PokemonSolid', cursive;
   font-size: 45px;
   color: #003a70;
   text-align: center;
@@ -87,7 +92,7 @@ header {
   background-color:	#ffcb05;
   color:	#003a70;
   font-size: 32px;
-  font-family: 'Pokemon', cursive;
+  font-family: 'PokemonSolid', cursive;
   text-align: center;
   box-shadow: -5px 5px 10px 0 #003a708c;
   transition: 0.3s;
@@ -102,7 +107,7 @@ header {
 }
 
 .option p {
-  margin: -25px 0 0 0 ;
+  margin: 0;
   text-transform: capitalize;
 }
 

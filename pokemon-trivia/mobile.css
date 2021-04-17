@@ -51,7 +51,7 @@ header {
 
 #main-content {
   width: 100vw;
-  height: 80vh;
+  height: 96vh;
   background-color: rgb(233, 233, 233);
   display: flex;
   flex-direction: column;
@@ -87,10 +87,11 @@ header {
 
 .question h1 {
   margin: 20px;
+  font-size: 5vw;
 }
 
 .pokemon img {
-  width: 50vw;
+  width: 300px;
 }
 
 .pokemon p {
@@ -99,7 +100,7 @@ header {
 
 .option {
   margin: 10px 10px;
-  height: 150px;
+  height: 15vh;
   width: 45vw;
   border: 6px solid #3d7dca;
   border-radius: 10px;

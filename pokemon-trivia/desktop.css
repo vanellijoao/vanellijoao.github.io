@@ -58,13 +58,13 @@ header {
 }
 
 #right-content {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .question {
   justify-self: flex-start;
   font-family: 'PokemonSolid', cursive;
-  font-size: 45px;
+  font-size: 2vw;
   color: #003a70;
   text-align: center;
 }
@@ -157,6 +157,7 @@ header {
 .modal h1 {
   color: #003a70;
   font-family: 'PokemonSolid';
+  text-align: center;
   font-size: 60px;
   margin: 0;
 }

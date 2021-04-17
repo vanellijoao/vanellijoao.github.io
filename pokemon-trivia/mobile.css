@@ -11,6 +11,8 @@ body {
 /* Header */
 
 header {
+  position: absolute;
+  z-index: 9;
   width: 100vw;
   height: 8vh;
   background-color: #ef5350;
@@ -38,6 +40,8 @@ header {
 /* Parte principal */
 
 #general {
+  position: absolute;
+  top: 8vh;
   background-color: rgb(233, 233, 233);
   height: 94vh;
   width: 100vw;
@@ -76,7 +80,7 @@ header {
 .question {
   justify-self: flex-start;
   font-family: 'PokemonSolid', cursive;
-  font-size: 45px;
+  font-size: 8vw;
   color: #003a70;
   text-align: center;
 }
@@ -127,10 +131,9 @@ header {
 .correct {
   z-index: 10;
   position: absolute;
-  top: 7vh;
   background-color: #ef5350d8;
   width: 100vw;
-  height: 94vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

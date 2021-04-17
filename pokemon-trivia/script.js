@@ -8,7 +8,7 @@ function createCustomElement(element, className, innerText) {
 
 // random number must be from 1 to 386 (3rd generation)
 function randomNumber() {
-  return Math.ceil(Math.random()*150);
+  return Math.ceil(Math.random()*386);
 }
 
 // creates an array with the name and image of each pokemon
@@ -29,7 +29,11 @@ async function arrayOfAnswers() {
   return pokemonArray;
 }
 
-// 
+function resetPage() {
+  document.location.reload(true);
+}
+
+// checks if the name inside the button corresponds to the image
 function checkResult() {
   const clickedPokemon = this.firstChild.innerText.toLowerCase();
   const correctPokemon = document.querySelector('.pokemonAnswer').innerText;
@@ -38,7 +42,10 @@ function checkResult() {
     this.removeEventListener('click', checkResult);
   }
   if (clickedPokemon === correctPokemon) {
-    console.log('acertou, mizeravi')
+    const modal = document.querySelector('.correct');
+    const again = document.querySelector('.again');
+    again.addEventListener('click', resetPage)
+    modal.className = 'correct'
   }
   console.log(clickedPokemon);
   console.log(correctPokemon);

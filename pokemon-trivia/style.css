@@ -127,6 +127,60 @@ header {
 }
 
 /* -------------------------------------------------------- */
+/* Modal */
+
+.correct {
+  z-index: 10;
+  position: absolute;
+  top: 10vh;
+  background-color: #ef5350d8;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 60vw;
+  height: 60vh;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  box-shadow: -8px 8px 10px 0 #003a708c;
+  border: 8px solid #003a70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.modal h1 {
+  color: #003a70;
+  font-family: 'PokemonSolid';
+  font-size: 60px;
+  margin: 0;
+}
+
+.again {
+  width: 350px;
+  height: 80px;
+  cursor: pointer;
+  border: 6px solid #3d7dca;
+  border-radius: 10px;
+  background-color:	#ffcb05;
+  color:	#003a70;
+  font-size: 32px;
+  font-family: 'PokemonSolid', cursive;
+  text-align: center;
+  box-shadow: -5px 5px 10px 0 #003a708c;
+}
+
+.hidden {
+  display: none;
+  transition: 1s;
+}
+
+/* -------------------------------------------------------- */
 /* Footer */
 
 footer {

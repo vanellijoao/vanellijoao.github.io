@@ -29,16 +29,33 @@ async function arrayOfAnswers() {
   return pokemonArray;
 }
 
+// 
+function checkResult() {
+  const clickedPokemon = this.firstChild.innerText.toLowerCase();
+  const correctPokemon = document.querySelector('.pokemonAnswer').innerText;
+  if (clickedPokemon !== correctPokemon) {
+    this.className = 'option wrong';
+    this.removeEventListener('click', checkResult);
+  }
+  if (clickedPokemon === correctPokemon) {
+    console.log('acertou, mizeravi')
+  }
+  console.log(clickedPokemon);
+  console.log(correctPokemon);
+}
+
 // create button and p for each pokemon in the array above
 function createOptions(pokemonArray) {
   pokemonArray.forEach((pokemon) => {
     const newButton = createCustomElement('button', 'option', '');
+    newButton.addEventListener('click', checkResult)
     const newP = createCustomElement('p', '', pokemon[0]);
     newButton.appendChild(newP);
     document.querySelector('#left-content').appendChild(newButton)
   });
 }
 
+// get a random pokemon from the array and add an image and p (with display: none)
 function getImage(pokemonArray) {
   const id = Math.floor(Math.random()*4)
   const newImage = createCustomElement('img', 'pokemonImage', '')
@@ -48,7 +65,7 @@ function getImage(pokemonArray) {
   document.querySelector('.pokemon').appendChild(newP)
 }
 
-
+// render all the info in the screen
 async function renderImageAndAnswers() {
   const pokemonArray = await arrayOfAnswers();
   createOptions(pokemonArray);

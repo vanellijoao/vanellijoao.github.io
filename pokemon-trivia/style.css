@@ -87,6 +87,7 @@ header {
   margin: 10px 0;
   height: 80px;
   width: 350px;
+  cursor: pointer;
   border: 6px solid #3d7dca;
   border-radius: 10px;
   background-color:	#ffcb05;
@@ -118,6 +119,11 @@ header {
   color:	#003a7060;
   font-size: 32px;
   box-shadow: none;
+}
+
+.wrong:hover {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 /* -------------------------------------------------------- */

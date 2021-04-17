@@ -91,7 +91,7 @@ header {
 }
 
 .pokemon img {
-  width: 300px;
+  height: 50vw;
 }
 
 .pokemon p {
@@ -100,8 +100,8 @@ header {
 
 .option {
   margin: 10px 10px;
-  height: 15vh;
-  width: 45vw;
+  height: 25vw;
+  width: 40vw;
   border: 6px solid #3d7dca;
   border-radius: 10px;
   background-color:	#ffcb05;
@@ -156,20 +156,20 @@ header {
 .modal h1 {
   color: #003a70;
   font-family: 'PokemonSolid';
-  font-size: 10vw;
+  font-size: 8vw;
   text-align: center;
   margin: 10px;
 }
 
 .again {
   width: 60vw;
-  height: 200px;
+  height: 30vw;
   cursor: pointer;
   border: 6px solid #3d7dca;
   border-radius: 20px;
   background-color:	#ffcb05;
   color:	#003a70;
-  font-size: 8vw;
+  font-size: 5vw;
   font-family: 'PokemonSolid', cursive;
   text-align: center;
   box-shadow: -5px 5px 10px 0 #003a708c;

@@ -101,7 +101,7 @@ header {
   border-radius: 10px;
   background-color:	#ffcb05;
   color:	#003a70;
-  font-size: 8vw;
+  font-size: 6vw;
   font-family: 'PokemonSolid', cursive;
   text-align: center;
   box-shadow: -5px 5px 10px 0 #003a708c;
@@ -117,7 +117,7 @@ header {
   border-radius: 10px;
   background-color:	#ffcd0555;
   color:	#003a7060;
-  font-size: 8vw;
+  font-size: 6vw;
   box-shadow: none;
 }
 

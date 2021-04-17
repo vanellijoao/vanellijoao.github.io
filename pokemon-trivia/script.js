@@ -6,15 +6,9 @@ function createCustomElement(element, className, innerText) {
   return e;
 }
 
-// random number must be from 1 to 386
+// random number must be from 1 to 386 (3rd generation)
 function randomNumber() {
-  return Math.ceil(Math.random()*386);
-}
-
-// Get the Pokemon, based on the random number
-async function getPokemonObject() {
-  
-  return pokemon
+  return Math.ceil(Math.random()*150);
 }
 
 // creates an array with the name and image of each pokemon

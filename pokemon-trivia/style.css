@@ -43,7 +43,7 @@ header {
   justify-content: space-between;
 }
 
-#right-content, #leftcontent {
+#right-content, #left-content {
   width: 39.5vw;
   background-color: rgba(224, 224, 224, 0.664);
   display: flex;
@@ -52,13 +52,30 @@ header {
   align-items: center;
 }
 
+#right-content {
+  justify-content: space-between;
+}
+
 .question {
   justify-self: flex-start;
-  font-size: 40px
+  font-family: 'Pokemon', cursive;
+  font-size: 45px;
+  color: #003a70;
+  text-align: center;
+}
+
+.question h1 {
+  margin: 20px;
 }
 
 .pokemon img {
-  size: 2x
+  margin-bottom: 50px;
+  height: 300px;
+  width: 300px;
+}
+
+.pokemon p {
+  display: none;
 }
 
 .option {
@@ -70,6 +87,13 @@ header {
   background-color:	#ffcb05;
   color:	#003a70;
   font-size: 32px;
+  font-family: 'Pokemon', cursive;
+  text-align: center;
+}
+
+.option p {
+  margin: -25px 0 0 0 ;
+  text-transform: capitalize;
 }
 
 .wrong {

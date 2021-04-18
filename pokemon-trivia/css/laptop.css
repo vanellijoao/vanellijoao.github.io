@@ -22,12 +22,27 @@ header {
 .header {
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .header img {
   margin: 5px;
   max-height: 10vh;
+}
+
+#pokemon-logo {
+  transform: translateX(25%);
+  z-index: 2;
+}
+
+#pokemon-logo:hover + #running-pikachu {
+  transition: all 5s ease;
+  transform: translateX(1100%);
+}
+
+#running-pikachu {
+  transform: translateX(-1100%);
+  z-index: 1;
 }
 
 /* -------------------------------------------------------- */

@@ -38,16 +38,17 @@ header {
 .header {
   width: 90vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-#pokemon-logo,
-#running-pikachu
-{
+#pokemon-logo{
   height: 5vh;
 }
 
+#running-pikachu {
+  display: none;
+}
 
 /* -------------------------------------------------------- */
 /* Parte principal */

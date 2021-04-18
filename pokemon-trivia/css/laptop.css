@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'PokemonSolid';
-  src: url(./fonts/Pokemon\ Solid.ttf);
+  src: url(../fonts/Pokemon\ Solid.ttf);
 }
 
-body {
+* {
   margin: 0;
+  font-size: 10px;
 }
 
 /* -------------------------------------------------------- */
@@ -34,7 +35,7 @@ header {
 
 #general {
   background-color: rgb(233, 233, 233);
-  height: 80vh;
+  height: 82vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -42,7 +43,7 @@ header {
 
 #main-content {
   width: 80vw;
-  height: 80vh;
+  height: 82vh;
   background-color: rgb(233, 233, 233);
   display: flex;
   justify-content: space-between;
@@ -64,18 +65,18 @@ header {
 .question {
   justify-self: flex-start;
   font-family: 'PokemonSolid', cursive;
-  font-size: 2vw;
   color: #003a70;
   text-align: center;
 }
 
 .question h1 {
   margin: 20px;
+  font-size: 3.5rem;
 }
 
 .pokemon img {
   margin-bottom: 50px;
-  height: 30vw;
+  height: 25vw;
 }
 
 .pokemon p {
@@ -91,7 +92,6 @@ header {
   border-radius: 10px;
   background-color:	#ffcb05;
   color:	#003a70;
-  font-size: 4vw;
   font-family: 'PokemonSolid', cursive;
   text-align: center;
   box-shadow: -5px 5px 10px 0 #003a708c;
@@ -109,6 +109,7 @@ header {
 .option p {
   margin: 0;
   text-transform: capitalize;
+  font-size: 3rem;
 }
 
 .wrong {
@@ -134,7 +135,7 @@ header {
   top: 10vh;
   background-color: #ef5350d8;
   width: 100vw;
-  height: 80vh;
+  height: 82vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,7 +158,7 @@ header {
   color: #003a70;
   font-family: 'PokemonSolid';
   text-align: center;
-  font-size: 60px;
+  font-size: 5.5rem;
   margin: 0;
 }
 
@@ -169,7 +170,7 @@ header {
   border-radius: 10px;
   background-color:	#ffcb05;
   color:	#003a70;
-  font-size: 32px;
+  font-size: 3rem;
   font-family: 'PokemonSolid', cursive;
   text-align: center;
   box-shadow: -5px 5px 10px 0 #003a708c;
@@ -185,7 +186,7 @@ header {
 
 footer {
   background-color: #ef5350;
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -201,15 +202,16 @@ footer {
 
 #footer-text {
   color: white;
-  font-size: 2vw;
+  font-size: 1.5rem;
 }
 
 a {
+  font-size: 1.6rem;
   text-decoration: none;
   color: rgb(5, 2, 22);
 }
 
 .fab {
   margin: 0 5px;
-  font-size: 2vw
+  font-size: 2rem
 }

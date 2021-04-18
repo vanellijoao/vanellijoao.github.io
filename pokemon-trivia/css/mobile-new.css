@@ -6,7 +6,7 @@
 :root {
   /* colors */
   --pokemon-red: #ef5552;
-  --pokemon-red-transparent: #ef5552dc;
+  --pokemon-red-transparent: #ef5552b4;
   --pokemon-darkblue: #003a70;
   --pokemon-lightblue: #3d7dca;
   --pokemon-yellow: #ffcb05;
@@ -132,8 +132,9 @@ header {
 /* Modal */
 
 .correct {
+  position: absolute;
   width: 100vw;
-  height: 90vh;
+  height: 93vh;
   background-color: var(--pokemon-red-transparent);
   display: flex;
   align-items: center;

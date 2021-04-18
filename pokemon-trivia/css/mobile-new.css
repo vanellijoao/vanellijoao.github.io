@@ -24,7 +24,7 @@
 header {
   margin: 0;
   width: 100vw;
-  height: 10vh;
+  height: 7vh;
   background-color: var(--pokemon-red);
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ header {
 #pokemon-logo,
 #running-pikachu
 {
-  height: 8vh;
+  height: 5vh;
 }
 
 
@@ -50,15 +50,13 @@ header {
 
 #general {
   width: 100vw;
-  height: 90vh;
-  background-color: var(--pokemon-grey);
+  background-color: white;
   display: flex;
   justify-content: center;
 }
 
 #main-content {
   width: 95vw;
-  height: 90vh;
   display: flex;
   flex-direction: column;
 }
@@ -84,18 +82,18 @@ header {
 .question {
   justify-self: flex-start;
   font-family: 'PokemonSolid', cursive;
-  font-size: 8vw;
   color: #003a70;
   text-align: center;
 }
 
 .question h1 {
-  margin: 20px;
-  font-size: 5vw;
+  margin: 40px;
+  font-size: 3rem;
 }
 
 .pokemon img {
   height: 50vw;
+  margin-bottom: 40px;
 }
 
 .pokemon p {

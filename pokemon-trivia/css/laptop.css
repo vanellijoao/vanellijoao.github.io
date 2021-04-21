@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'PokemonSolid';
+  src: url(../fonts/Pokemon\ Solid.ttf);
+}
+
+* {
+  margin: 0;
+  font-size: 10px;
+}
+
+/* -------------------------------------------------------- */
+/* Header */
+
+header {
+  width: 100vw;
+  height: 10vh;
+  background-color: #ef5350;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.header img {
+  margin: 5px;
+  max-height: 10vh;
+}
+
+#pokemon-logo {
+  transform: translateX(25%);
+  z-index: 2;
+}
+
+#pokemon-logo:hover + #running-pikachu {
+  transition: all 5s ease;
+  transform: translateX(1100%);
+}
+
+#running-pikachu {
+  transform: translateX(-1100%);
+  z-index: 1;
+}
+
+/* -------------------------------------------------------- */
+/* Parte principal */
+
+#general {
+  background-color: rgb(233, 233, 233);
+  height: 82vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#main-content {
+  width: 80vw;
+  height: 82vh;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: space-between;
+}
+
+#right-content, #left-content {
+  width: 39.5vw;
+  background-color: rgba(224, 224, 224, 0.664);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#right-content {
+  justify-content: space-around;
+}
+
+.question {
+  justify-self: flex-start;
+  font-family: 'PokemonSolid', cursive;
+  color: #003a70;
+  text-align: center;
+}
+
+.question h1 {
+  margin: 20px;
+  font-size: 3.5rem;
+}
+
+.pokemon img {
+  margin-bottom: 50px;
+  height: 25vw;
+}
+
+.pokemon p {
+  display: none;
+}
+
+.option {
+  margin: 10px 0;
+  height: 8vw;
+  width: 30vw;
+  cursor: pointer;
+  border: 6px solid #3d7dca;
+  border-radius: 10px;
+  background-color:	#ffcb05;
+  color:	#003a70;
+  font-family: 'PokemonSolid', cursive;
+  text-align: center;
+  box-shadow: -5px 5px 10px 0 #003a708c;
+  transition: 0.3s;
+}
+
+.option:hover {
+  box-shadow: -8px 8px 10px 0 #003a708c;
+}
+
+.option:active, .option:focus {
+  outline: none;
+}
+
+.option p {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.wrong {
+  border: 6px solid #3d7cca59;
+  border-radius: 10px;
+  background-color:	#ffcd0555;
+  color:	#003a7060;
+  font-size: 32px;
+  box-shadow: none;
+}
+
+.wrong:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* -------------------------------------------------------- */
+/* Modal */
+
+.correct {
+  z-index: 10;
+  position: absolute;
+  top: 10vh;
+  background-color: #ef5350d8;
+  width: 100vw;
+  height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 60vw;
+  height: 60vh;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  box-shadow: -8px 8px 10px 0 #003a708c;
+  border: 8px solid #003a70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.modal h1 {
+  color: #003a70;
+  font-family: 'PokemonSolid';
+  text-align: center;
+  font-size: 5.5rem;
+  margin: 0;
+}
+
+.again {
+  width: 350px;
+  height: 80px;
+  cursor: pointer;
+  border: 6px solid #3d7dca;
+  border-radius: 10px;
+  background-color:	#ffcb05;
+  color:	#003a70;
+  font-size: 3rem;
+  font-family: 'PokemonSolid', cursive;
+  text-align: center;
+  box-shadow: -5px 5px 10px 0 #003a708c;
+}
+
+.hidden {
+  display: none;
+  transition: 1s;
+}
+
+/* -------------------------------------------------------- */
+/* Footer */
+
+footer {
+  background-color: #ef5350;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer-text {
+  color: white;
+  font-size: 1.5rem;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: rgb(5, 2, 22);
+}
+
+.fab {
+  margin: 0 5px;
+  font-size: 2rem
+}
